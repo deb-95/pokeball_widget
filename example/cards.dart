@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokeball_widget/pokeball.dart';
+import 'package:pokeball_widget/pokeball_widget.dart';
 
 void main() {
   runApp(MyApp());

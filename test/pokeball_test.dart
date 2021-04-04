@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:pokeball_widget/pokeball.dart';
+import 'package:pokeball_widget/pokeball_widget.dart';
 
 void main() {
   testWidgets(
