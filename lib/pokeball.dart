@@ -1,3 +1,3 @@
 library pokeball;
 
-export 'src/pokeball_painter.dart';
+export 'src/pokeball_widget.dart';

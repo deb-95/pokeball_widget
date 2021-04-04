@@ -3,13 +3,13 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-/// Paint class to wrap pokeball painter.
+/// Paint widget to wrap PokeBallPainter.
 /// Receives a [Color] and a [double] opacity to be passed down to PokeBallPainter
-class PokeBallPaint extends CustomPaint {
+class PokeBallWidget extends CustomPaint {
   final Color color;
   final double opacity;
 
-  const PokeBallPaint(
+  PokeBallWidget(
       {Key key,
       @required this.color,
       this.opacity,
@@ -20,6 +20,7 @@ class PokeBallPaint extends CustomPaint {
       Widget child})
       : super(
           key: key,
+          painter: PokeBallPainter(color: color, opacity: opacity),
           foregroundPainter: foregroundPainter,
           size: size,
           isComplex: isComplex,

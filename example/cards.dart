@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokeball/pokeball.dart';
+import 'package:pokeball_widget/pokeball.dart';
 
 void main() {
   runApp(MyApp());
@@ -52,10 +52,8 @@ class PokeCard extends StatelessWidget {
                 child: SizedBox(
                   height: MediaQuery.of(context).size.height / 6,
                   width: MediaQuery.of(context).size.height / 6,
-                  child: CustomPaint(
-                    painter: PokeBallPainter(
-                      color: color,
-                    ),
+                  child: PokeBallWidget(
+                    color: color,
                   ),
                 ),
               ),

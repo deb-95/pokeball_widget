@@ -1,8 +1,7 @@
-name: pokeball
-description: A new Flutter package project.
+name: pokeball_widget
+description: A Pokeball CustomPaint to draw a pokeball.
 version: 0.0.1
-author: Debora Del Vecchio
-homepage:
+homepage: https://github.com/deb-95/pokeball_paint
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
