@@ -5,28 +5,38 @@ import 'package:flutter/material.dart';
 
 /// Paint widget to wrap PokeBallPainter.
 /// Receives a [Color] and a [double] opacity to be passed down to PokeBallPainter
-class PokeBallWidget extends CustomPaint {
+class PokeBallWidget extends StatelessWidget {
   final Color color;
   final double? opacity;
+  final CustomPainter? foregroundPainter;
+  final Size size;
+  final bool isComplex;
+  final bool willChange;
+  final Widget? child;
 
   PokeBallWidget(
       {Key? key,
       required this.color,
       this.opacity,
-      CustomPainter? foregroundPainter,
-      Size size = Size.zero,
-      bool isComplex = false,
-      bool willChange = false,
-      Widget? child})
-      : super(
-          key: key,
-          painter: PokeBallPainter(color: color, opacity: opacity),
-          foregroundPainter: foregroundPainter,
-          size: size,
-          isComplex: isComplex,
-          willChange: willChange,
-          child: child,
-        );
+      this.foregroundPainter,
+      this.size = Size.zero,
+      this.isComplex = false,
+      this.willChange = false,
+      this.child})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CustomPaint(
+      painter: PokeBallPainter(color: color, opacity: opacity),
+      child: child,
+      foregroundPainter: foregroundPainter,
+      isComplex: isComplex,
+      key: key,
+      size: size,
+      willChange: willChange,
+    );
+  }
 }
 
 /// Painter for the pokeball shape.

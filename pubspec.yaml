@@ -1,6 +1,6 @@
 name: pokeball_widget
 description: A Pokeball CustomPaint widget to draw a simple minimal pokeball.
-version: 1.0.0+2
+version: 1.0.0+3
 homepage: https://github.com/deb-95/pokeball_widget
 
 environment:
