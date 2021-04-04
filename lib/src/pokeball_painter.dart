@@ -74,5 +74,6 @@ class PokeBallPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+  bool shouldRepaint(PokeBallPainter oldDelegate) =>
+      oldDelegate.color != this.color || oldDelegate.opacity != this.opacity;
 }
