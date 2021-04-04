@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
               height: MediaQuery.of(context).size.width / 2,
               width: MediaQuery.of(context).size.width / 2,
               child: PokeBallWidget(
-                color: Theme.of(context).textTheme.bodyText2.color,
+                color: Theme.of(context).textTheme.bodyText2?.color ?? Colors.black,
               ),
             ),
           ),

@@ -7,17 +7,17 @@ import 'package:flutter/material.dart';
 /// Receives a [Color] and a [double] opacity to be passed down to PokeBallPainter
 class PokeBallWidget extends CustomPaint {
   final Color color;
-  final double opacity;
+  final double? opacity;
 
   PokeBallWidget(
-      {Key key,
-      @required this.color,
+      {Key? key,
+      required this.color,
       this.opacity,
-      CustomPainter foregroundPainter,
+      CustomPainter? foregroundPainter,
       Size size = Size.zero,
       bool isComplex = false,
       bool willChange = false,
-      Widget child})
+      Widget? child})
       : super(
           key: key,
           painter: PokeBallPainter(color: color, opacity: opacity),
@@ -34,15 +34,15 @@ class PokeBallWidget extends CustomPaint {
 /// [double] opacity to set the shape opacity
 class PokeBallPainter extends CustomPainter {
   final Color color;
-  final double opacity;
+  final double? opacity;
 
-  PokeBallPainter({@required this.color, this.opacity = 0.5});
+  PokeBallPainter({required this.color, this.opacity});
 
   @override
   void paint(Canvas canvas, Size size) {
-    final minSize = min<num>(size.width, size.height);
+    final minSize = min<double>(size.width, size.height);
     final centerOffset = Offset(size.width / 2, size.height / 2);
-    final mainPaint = Paint()..color = color.withOpacity(opacity);
+    final mainPaint = Paint()..color = color.withOpacity(opacity ?? 0.5);
     final padding = minSize / 20;
     final strokeWidth = minSize / 13;
     final linePaintToRemove = Paint()

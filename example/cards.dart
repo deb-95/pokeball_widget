@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
 
 class PokeCard extends StatelessWidget {
   final Color color;
-  const PokeCard({Key key, this.color}) : super(key: key);
+  const PokeCard({Key? key, required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,2 +1,2 @@
-## [0.0.1] - 02.04.2021
-Added pokeball painter.
+## [1.0.0] - 04.04.2021
+Initial release
