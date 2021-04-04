@@ -27,4 +27,5 @@ class MyApp extends StatelessWidget {
 }
 ```
 ## Examples
-<img src="https://user-images.githubusercontent.com/44870331/113492338-f3417e80-94d6-11eb-8889-f0e8a48b37c4.png" height="480"> <img src="https://user-images.githubusercontent.com/44870331/113492387-4b788080-94d7-11eb-8d5f-373603d44e24.png" height="480">
+<img src="https://user-images.githubusercontent.com/44870331/113492338-f3417e80-94d6-11eb-8889-f0e8a48b37c4.png" height="480"> <img src="https://user-images.githubusercontent.com/44870331/113492387-4b788080-94d7-11eb-8d5f-373603d44e24.png" height="480"> <img src="https://user-images.githubusercontent.com/44870331/113506452-43572a00-9545-11eb-8a50-3f814e35048f.png" height="480"> 
+
