@@ -1,5 +1,5 @@
-# pokeball
-Simple custom painter pokeball widget.
+# pokeball_widget
+ A Pokeball CustomPaint widget to draw a simple minimal pokeball.
 
 ## Usage
 For more usages check the examples folder
